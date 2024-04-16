@@ -44,8 +44,10 @@ ret,thresh_img5=cv2.threshold(image_gray,100,255,cv2.THRESH_TRUNC)
 ```
 ### Use Adaptive thresholding to segment the image
 ```python
-thresh_img7=cv2.adaptiveThreshold(image_gray,255,cv2.ADAPTIVE_THRESH_MEAN_C,cv2.THRESH_BINARY,11,2)
-thresh_img8=cv2.adaptiveThreshold(image_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,11,2)
+thresh_img7=cv2.adaptiveThreshold(image_gray,255,cv2.ADAPTIVE_THRESH_MEAN_C
+            ,cv2.THRESH_BINARY,11,2)
+thresh_img8=cv2.adaptiveThreshold(image_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C
+            ,cv2.THRESH_BINARY,11,2)
 ```
 ### Use Otsu's method to segment the image 
 ```python
